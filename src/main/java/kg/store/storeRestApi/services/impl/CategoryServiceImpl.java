@@ -1,8 +1,8 @@
-package kg.store.storeRestApi.exceptions.services.impl;
+package kg.store.storeRestApi.services.impl;
 
 import kg.store.storeRestApi.dao.CategoryRepo;
 import kg.store.storeRestApi.exceptions.CategoriesException;
-import kg.store.storeRestApi.exceptions.services.CategoryService;
+import kg.store.storeRestApi.services.CategoryService;
 import kg.store.storeRestApi.mappers.CategoryMapper;
 import kg.store.storeRestApi.models.dto.CategoryDto;
 import lombok.AllArgsConstructor;

@@ -1,10 +1,10 @@
-package kg.store.storeRestApi.exceptions.services.impl;
+package kg.store.storeRestApi.services.impl;
 
 import kg.store.storeRestApi.dao.ClientRepo;
 import kg.store.storeRestApi.exceptions.ClientExceptions;
 import kg.store.storeRestApi.mappers.ClientMapper;
 import kg.store.storeRestApi.models.dto.ClientDto;
-import kg.store.storeRestApi.exceptions.services.ClientService;
+import kg.store.storeRestApi.services.ClientService;
 import org.jboss.logging.Logger;
 import org.springframework.stereotype.Service;
 
