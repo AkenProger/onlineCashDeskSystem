@@ -15,7 +15,7 @@ public class ProductServiceImpl implements ProductService {
 
     private final ProductMapper productMapper = ProductMapper.INSTANCE;
     private final ProductRepo productRepo;
-    private CategoryService categoryService;
+    private final CategoryService categoryService;
 
     public ProductServiceImpl(ProductRepo productRepo, CategoryService categoryService) {
         this.productRepo = productRepo;
