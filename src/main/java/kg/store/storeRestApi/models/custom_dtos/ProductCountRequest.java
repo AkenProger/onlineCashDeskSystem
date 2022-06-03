@@ -1,4 +1,4 @@
-package kg.store.storeRestApi.models.custom_dtos.responses;
+package kg.store.storeRestApi.models.custom_dtos;
 
 import lombok.Data;
 

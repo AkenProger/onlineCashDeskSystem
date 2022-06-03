@@ -27,7 +27,7 @@ public class PriceServiceImpl implements PriceService {
 
     @Override
     public PriceDto update(PriceDto priceDto) {
-        if (priceRepo.existsById(priceDto.getId())) {
+        if (!priceRepo.existsById(priceDto.getId())) {
             throw new PriceException("Не найдена цена для этого товара!");
         }
         return priceMapper.toDto(priceRepo.save(priceMapper.toEntity(priceDto)));

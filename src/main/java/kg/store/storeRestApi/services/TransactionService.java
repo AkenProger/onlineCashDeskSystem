@@ -1,7 +1,7 @@
 package kg.store.storeRestApi.services;
-import kg.store.storeRestApi.models.custom_dtos.responses.ProductCountRequest;
-import kg.store.storeRestApi.models.custom_dtos.responses.TransactionResponse;
-import kg.store.storeRestApi.models.custom_dtos.responses.TransactionResponseWithDebt;
+import kg.store.storeRestApi.models.custom_dtos.ProductCountRequest;
+import kg.store.storeRestApi.models.custom_dtos.TransactionResponse;
+import kg.store.storeRestApi.models.custom_dtos.TransactionResponseWithDebt;
 import kg.store.storeRestApi.models.dto.TransactionDto;
 
 import java.util.List;

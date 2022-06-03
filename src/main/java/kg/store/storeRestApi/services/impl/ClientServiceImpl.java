@@ -26,7 +26,7 @@ public class ClientServiceImpl implements ClientService {
 
     @Override
     public ClientDto update(ClientDto clientDto) {
-        if (clientRepo.existsById(clientDto.getId())) {
+        if (!clientRepo.existsById(clientDto.getId())) {
             throw new ClientExceptions("Клиент не найден!");
         }
         logger.info("Клиент clientDto {} изменена ");

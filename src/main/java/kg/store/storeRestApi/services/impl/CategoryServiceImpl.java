@@ -27,7 +27,7 @@ public class CategoryServiceImpl implements CategoryService {
 
     @Override
     public CategoryDto update(CategoryDto categoryDto) {
-        if (categoryRepo.existsById(categoryDto.getId())) {
+        if (!categoryRepo.existsById(categoryDto.getId())) {
             throw new CategoriesException("Категория не найдена!");
         }
         logger.info("Изменена категория");

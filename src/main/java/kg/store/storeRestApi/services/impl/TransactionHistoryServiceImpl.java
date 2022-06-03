@@ -23,7 +23,7 @@ public class TransactionHistoryServiceImpl implements TransactionHistoryService 
 
     @Override
     public TransactionHistoryDto update(TransactionHistoryDto transactionHistoryDto) {
-        if (historyRepo.existsById(transactionHistoryDto.getId())) {
+        if (!historyRepo.existsById(transactionHistoryDto.getId())) {
             throw new HistoryException("История не найдена по этой id!");
         }
         return transactionHistoryMapper.toDto(historyRepo.save(transactionHistoryMapper.toEntity(transactionHistoryDto)));

@@ -33,7 +33,7 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public ProductDto update(ProductDto productDto) {
-        if (productRepo.existsById(productDto.getId())) {
+        if (!productRepo.existsById(productDto.getId())) {
             throw  new ProductException("Не найднен товар с id {}");
         }
         logger.info("Обновился товар по productDto{}");
